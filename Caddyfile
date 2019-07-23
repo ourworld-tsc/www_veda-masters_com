@@ -5,7 +5,7 @@
     
     git {
         repo https://github.com/veda-websites/www_veda-masters_com
-        branch production
+        branch master
         hook /webhook "zU3687$aJEb6"
         key ~/.ssh/id_rsa
         path . 
