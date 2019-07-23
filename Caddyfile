@@ -4,7 +4,7 @@
     root .
     
     git {
-        repo https://github.com/veda-websites/www_veda-masters_com
+        repo https://github.com/veda-websites/www_veda-masters_com.git
         branch production
         hook /webhook "zU3687$aJEb6"
         key ~/.ssh/id_rsa
