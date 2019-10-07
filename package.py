@@ -8,7 +8,7 @@ class Package(j.baseclasses.threebot_package):
     """
     def _init(self, **kwargs):
         self.branch = kwargs["package"].branch or "master"
-        self.incubaid = "https://github.com/veda-websites/www_veda-masters_com"
+        self.veda_masters = "https://github.com/veda-websites/www_veda-masters_com"
 
     def prepare(self):
         """
@@ -25,7 +25,7 @@ class Package(j.baseclasses.threebot_package):
         static_location = locations.locations_static.new()
         static_location.name = "static"
         static_location.path_url = "/"
-        path = j.clients.git.getContentPathFromURLorPath(self.incubaid, branch=self.branch, pull=True)
+        path = j.clients.git.getContentPathFromURLorPath(self.veda_masters, branch=self.branch, pull=True)
         static_location.path_location = path
         static_location.use_jumpscale_weblibs = True
         website.path = path
